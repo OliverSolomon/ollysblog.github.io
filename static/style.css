@@ -1,0 +1,256 @@
+/*Desktop first css*/
+/* fonts
+times New roman
+arial
+franklin gothic
+*/
+
+colors{
+    color: #1792D2;
+    color: #143774;
+    color: #717171;
+    color: #EBEBEB;
+    color: #F8F8F8;/*header*/
+    color: #DBDBDB; /*border*/
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+header{
+    background: #F8F8F8;
+    height: 13vh;
+}
+
+header .header-div{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #143774;
+    margin: 0;
+}
+
+header .logo p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    color: #1792D2;
+    margin: 0;
+    letter-spacing: .135em;
+}
+
+nav ul{
+    display: flex;
+    cursor: pointer;
+}
+
+nav ul li{
+    color: #717171;
+    margin: auto;
+    margin-left: 1.5em;
+}
+
+nav ul li:hover,nav ul li:focus{
+    color: #1792D2;
+    border-bottom: 1px solid #717171;
+}
+
+@media (max-width:720px) {
+    header{
+        height: 30vh;
+    }
+
+    header .header-div{
+        flex-direction: column;
+    }
+    nav ul{
+        margin-top: .5em;
+        margin-right: 2em;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav ul li{
+        margin: .5em 0;
+    }
+}
+
+@media (max-width:352px) {
+    header{
+        height: 40vh;
+    }
+}
+
+/*This is the end of the header and nav styling*/
+
+.thorax{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section{
+    width: 70%;
+}
+
+span{
+    color: #1792D2;
+    text-underline-position: below;
+}
+
+.time-stamp{
+    font-size: .75em;
+    margin-top: -1em;
+}
+
+.hero{
+    border-bottom: #717171 2px solid;
+    padding-bottom: 2em;
+    margin-bottom: 5em;
+}
+
+.hero img{
+    max-width: 100%;
+}
+
+.post h3{
+    color: #143774;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.post .continue{
+    color: #1792D2;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.torso .post-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-card{
+    margin: 1em 0;
+}
+
+.post-card .meta{
+    width: 20%;
+    /* border: #1792D2 2px solid; */
+}
+
+.post-card .meta img{
+    /* width: 70%;
+    min-width: 100%; */
+}
+
+.post-card .post{
+    width: 70%;
+} 
+
+.right-section{
+    width: 22%;
+    align-items: flex-start;
+}
+
+.right-section .margin{
+    border: .8em solid #DBDBDB;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+.right-section h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: #143774;
+}
+
+.right-section p{
+    color: #143774;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+.right-section .about-me p{
+    letter-spacing: .135em;
+    font-family: Arial;
+    font-weight: 500;
+}
+
+.preview .preview-card{
+    margin: 2em auto;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #717171;
+}
+
+@media (max-width:720px) {
+    .thorax{
+        flex-direction: column;
+    }
+
+    .left-section{
+        width: 100%;
+    }
+
+    .post-card{
+        flex-direction: column;
+    }
+
+    .post-card .meta{
+        width: 100%;
+        margin-left: 3em;
+    }
+    .post-card .post{
+        width: 100%;
+    }
+
+    .right-section{
+        width: 100%;
+    }
+}
+
+.react img{
+    width: 2%;
+    bottom: 0;
+    position: sticky;
+    display: none;
+}
+
+footer{
+    text-align: center;
+    height: 6vh;
+    margin: 0;
+    margin-top: 3em;
+    background: #143774;
+    color: #bbbbbb;
+    padding: 4em 0;
+}
+
+footer p{
+    margin: 0;
+}
